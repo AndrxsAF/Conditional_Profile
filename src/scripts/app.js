@@ -7,9 +7,14 @@ let lista = []
 const addToDo = (arr) => {
     let toPrint = ''
     for (i in arr) {
-        toPrint += `<li>${arr[i]} <button onclick="eliminar(${i})" id="todo-${i}">Eliminar</button></i>`
+        toPrint += `<li class="list-group-item d-flex justify-content-between align-items-center bg-light display-hover"><p class="m-0 text-wrap todo-item">${arr[i]}</p><button type="button" class="btn-close display-custom" data-bs-dismiss="alert" onclick="eliminar(${i})" id="todo-${i} aria-label="Close"></button></li>`
     }
-    todo.innerHTML = toPrint
+    if (arr.length == 0) {
+        todo.innerHTML = toPrint + `<li class="list-group-item d-flex justify-content-between align-items-center bg-light custom-left-init"><p class="m-0 text-wrap todo-item">No task, add a task.</p></li>`
+    } else {
+        todo.innerHTML = toPrint + `<li class="list-group-item d-flex justify-content-between align-items-center bg-light custom-left"><p class="m-0 text-wrap todo-item">${(arr.length)} items left.</p></li>`
+    }
+    
 }
 
 const handleClick = (event) => {

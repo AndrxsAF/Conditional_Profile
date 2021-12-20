@@ -1,0 +1,56 @@
+.fondo {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    margin-top: 100px !important;
+    font-size: calc(3.375rem + 1.5vw) !important;
+    color: gray;
+    font-weight: 100 !important;
+}
+
+.custom-left {
+    color: gray !important;
+    font-size: 0.8rem !important;
+    max-height: 30px !important;
+    padding: 8px 15px 0px 15px !important;
+}
+
+.custom-left > p {
+    margin: 0 !important;
+}
+
+.custom-left-init {
+    color: gray !important;
+}
+
+.form-custom {
+    margin-bottom: 8px !important;
+}
+
+.todo-div{
+    margin: auto;
+}
+
+.todo-item {
+    max-width: 220px;
+    min-height: 25px;
+}
+
+.input-custom {
+    width: 288px !important;
+    border-radius: 0rem !important;
+}
+
+.card {
+    border-radius: 0rem !important;
+}
+
+.display-custom {
+    display: none;
+}
+
+.display-hover:hover > .display-custom {
+    display: block;
+}
